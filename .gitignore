@@ -1,0 +1,84 @@
+# SPDX-FileCopyrightText: 2014-2023 Megan Conkle <megan.conkle@kdemail.net>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+# general
+build/
+/build*/
+*.rej
+*.orig
+*.out
+CMakeLists.txt.user*
+/.clang-format
+/.idea
+
+# kate
+*~
+*-swp
+
+# kdevelop
+*.kdev4
+
+# from kdiff3
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+
+# from dolphin
+.directory
+
+# LSP Server data
+/.clangd
+/.cmake/
+/.cache/
+/compile_commands.json
+/cmake-build*
+.vscode/
+.flatpak/
+.flatpak-builder/
+/_build/
+
+# Qt-es
+/.qmake.cache
+/.qmake.stash
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+Makefile*
+*-build-*
+/.qtc_clangd/
+/.qtc_clangd/*
+*.idx
+
+# QtCreator
+*.autosave
+
+# QtCtreator Qml
+*.qmlproject.user
+*.qmlproject.user.*
+
+*.qm
+
+# Mac finder stub
+.DS_Store
+
+# Debian packaging artifacts
+/debian/mdwriter/
+/debian/.debhelper/
+/debian/files
+/debian/*.substvars
+/debian/*.debhelper*
+/obj-*/
+/*.deb
+/*.buildinfo
+/*.changes
+/*.dsc
+/*.tar.*
+
+

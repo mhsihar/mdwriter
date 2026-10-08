@@ -1,0 +1,13 @@
+mdwriter (23.08.5+mdwriter1) unstable; urgency=medium
+
+  * Initial fork of ghostwriter 23.08.5 (Qt5/KF5), rebranded as mdwriter so it
+    can be installed alongside the stock ghostwriter package.
+  * Feature: preview-first layout — rendered preview by default, source editor
+    toggled with Ctrl+Shift+E.
+  * Feature: import Visual Studio Code color themes (built-in and installed
+    extension themes) via Settings > Themes > "Import from VS Code...".
+  * Feature: VS Code-matching default fonts (Liberation Mono for code,
+    Ubuntu for preview text).
+  * Fix: firstAvailableFont() silently skipped installed fonts.
+
+ -- mhsihar <mhsihar@users.noreply.github.com>  Wed, 07 Oct 2026 16:30:00 +0800
