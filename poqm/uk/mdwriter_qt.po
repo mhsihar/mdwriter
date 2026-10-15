@@ -1,0 +1,1767 @@
+# Yuri Chornoivan <yurchor@ukr.net>, 2022, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2023-07-04 06:54+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 20.12.0\n"
+
+#: src/appmain.cpp:75
+msgctxt "main|"
+msgid "ghostwriter"
+msgstr "ghostwriter"
+
+#: src/appmain.cpp:79
+msgctxt "main|"
+msgid "A markdown editor"
+msgstr "Редактор Markdown"
+
+#: src/appmain.cpp:86
+msgctxt "main|"
+msgid "FocusWriter developer, whose Qt code mentored me"
+msgstr "Розробник FocusWriter, за кодом Qt якого навчався автор"
+
+#: src/appmain.cpp:91
+msgctxt "main|"
+msgid "ReText developer, whose algorithms helped immensely"
+msgstr "Розробник ReText, чиї алгоритми значно сприяли розробці"
+
+#: src/appmain.cpp:96
+msgctxt "main|"
+msgid ""
+"StretchPlayer developer, whose application showed me how to make frameless "
+"windows in Qt"
+msgstr ""
+"Розробник StretchPlayer, чия програма показала автору, як створювати вікна "
+"без рамок на Qt"
+
+#: src/appmain.cpp:101
+msgctxt "main|"
+msgid "UberWriter (now Apostrophe) developer, for providing inspiration"
+msgstr "Розробник UberWriter (тепер Apostrophe), за натхнення"
+
+#: src/appmain.cpp:105
+msgctxt "main|"
+msgid "Other Contributors"
+msgstr "Інші учасники розробки"
+
+#: src/appmain.cpp:106
+msgctxt "main|"
+msgid ""
+"Everyone who provided translations, documentation, bug fixes, or new "
+"features over the years"
+msgstr ""
+"Усі, хто надавав переклади, документацію, виправлення вад або реалізував "
+"можливості протягом усіх років розробки"
+
+#: src/appmain.cpp:111
+msgctxt "main|"
+msgid "An extended version of the C reference implementation of CommonMark"
+msgstr "Розширена версія еталонної реалізації на C CommonMark"
+
+#: src/appmain.cpp:116
+msgctxt "main|"
+msgid "A JavaScript library for building user interfaces"
+msgstr "Бібліотека на JavaScript для побудови інтерфейсу користувача"
+
+#: src/appmain.cpp:121
+msgctxt "main|"
+msgid "Font Awesome support for Qt applications"
+msgstr "Підтримка шрифтів Awesome для програм Qt"
+
+#: src/appmain.cpp:126
+msgctxt "main|"
+msgid "A JavaScript display engine for mathematics"
+msgstr "Рушій показу на JavaScript для формул"
+
+#: src/appmain.cpp:131
+#, qt-format
+msgctxt "main|"
+msgid "Copyright 2014-%1 The ghostwriter team"
+msgstr "© Команда ghostwriter, 2014-%1"
+
+#: src/appmain.cpp:149
+msgctxt "main|"
+msgid "Welcome to ghostwriter!"
+msgstr "Вітаємо у ghostwriter!"
+
+#: src/appmain.cpp:152
+msgctxt "main|"
+msgid "(Optional) File to open."
+msgstr "(Необов'язкове) Файл, який слід відкрити."
+
+#: src/appmain.cpp:155
+msgctxt "main|"
+msgid "Disables GPU acceleration."
+msgstr "Вимикає апаратне прискорення графічним процесором."
+
+#: src/documentmanager.cpp:56
+msgctxt "ghostwriter::DocumentManager|"
+msgid "untitled"
+msgstr "без назви"
+
+#: src/documentmanager.cpp:167
+msgctxt "ghostwriter::DocumentManager|"
+msgid "Markdown"
+msgstr "Markdown"
+
+#: src/documentmanager.cpp:168
+msgctxt "ghostwriter::DocumentManager|"
+msgid "Text"
+msgstr "Текст"
+
+#: src/documentmanager.cpp:169
+msgctxt "ghostwriter::DocumentManager|"
+msgid "All"
+msgstr "Усі"
+
+#: src/documentmanager.cpp:223 src/documentmanager.cpp:731
+#, qt-format
+msgctxt "ghostwriter::DocumentManager|"
+msgid "Error saving %1"
+msgstr "Помилка зберігання %1"
+
+#: src/documentmanager.cpp:373
+msgctxt "ghostwriter::DocumentManager|"
+msgid "Open File"
+msgstr "Відкрити файл"
+
+#: src/documentmanager.cpp:386
+#, qt-format
+msgctxt "ghostwriter::DocumentManager|"
+msgid "Could not open %1"
+msgstr "Не вдалося відкрити %1"
+
+#: src/documentmanager.cpp:387
+msgctxt "ghostwriter::DocumentManager|"
+msgid "Permission denied."
+msgstr "Доступ заборонено."
+
+#: src/documentmanager.cpp:449
+msgctxt "ghostwriter::DocumentManager|"
+msgid "The document has been modified."
+msgstr "До документа було внесено зміни."
+
+#: src/documentmanager.cpp:450
+msgctxt "ghostwriter::DocumentManager|"
+msgid "Discard changes?"
+msgstr "Відкинути зміни?"
+
+#: src/documentmanager.cpp:481
+msgctxt "ghostwriter::DocumentManager|"
+msgid "Rename File"
+msgstr "Перейменувати файл"
+
+#: src/documentmanager.cpp:498 src/documentmanager.cpp:511
+#, qt-format
+msgctxt "ghostwriter::DocumentManager|"
+msgid "Failed to rename %1"
+msgstr "Не вдалося перейменувати %1"
+
+#: src/documentmanager.cpp:560
+msgctxt "ghostwriter::DocumentManager|"
+msgid "Save File"
+msgstr "Зберегти файл"
+
+#: src/documentmanager.cpp:697
+msgctxt "ghostwriter::DocumentManager|"
+msgid "The document has been modified by another program."
+msgstr "Документ було змінено в іншій програмі."
+
+#: src/documentmanager.cpp:698
+msgctxt "ghostwriter::DocumentManager|"
+msgid "Would you like to reload the document?"
+msgstr "Хочете перезавантажити документ?"
+
+#: src/documentmanager.cpp:732
+msgctxt "ghostwriter::DocumentManager|"
+msgid "No file path specified"
+msgstr "Не вказано шлях до файла"
+
+#: src/documentmanager.cpp:748 src/documentmanager.cpp:787
+#, qt-format
+msgctxt "ghostwriter::DocumentManager|"
+msgid "Could not read %1"
+msgstr "Не вдалося прочитати %1"
+
+#: src/documentmanager.cpp:769
+#, qt-format
+msgctxt "ghostwriter::DocumentManager|"
+msgid "opening %1"
+msgstr "відкриття %1"
+
+#: src/documentmanager.cpp:876
+msgctxt "ghostwriter::DocumentManager|"
+msgid "File has been modified."
+msgstr "До файла було внесено зміни."
+
+#: src/documentmanager.cpp:878
+#, qt-format
+msgctxt "ghostwriter::DocumentManager|"
+msgid "%1 has been modified."
+msgstr "%1 було змінено."
+
+#: src/documentmanager.cpp:887
+msgctxt "ghostwriter::DocumentManager|"
+msgid "Would you like to save your changes?"
+msgstr "Зберегти зміни?"
+
+#: src/documentmanager.cpp:918
+#, qt-format
+msgctxt "ghostwriter::DocumentManager|"
+msgid "%1 is read only."
+msgstr "%1 призначено лише для читання."
+
+#: src/documentmanager.cpp:919
+msgctxt "ghostwriter::DocumentManager|"
+msgid "Overwrite protected file?"
+msgstr "Перезаписати захищений файл?"
+
+#: src/documentmanager.cpp:938
+msgctxt "ghostwriter::DocumentManager|"
+msgid "Overwrite failed."
+msgstr "Не вдалося перезаписати."
+
+#: src/documentmanager.cpp:939
+msgctxt "ghostwriter::DocumentManager|"
+msgid "Please save file to another location."
+msgstr "Будь ласка, збережіть файл до іншого місця."
+
+#: src/documentmanager.cpp:966 src/documentmanager.cpp:977
+#: src/documentmanager.cpp:990
+msgctxt "ghostwriter::DocumentManager|"
+msgid "File backup failed"
+msgstr "Не вдалося створити резервну копію файла"
+
+#: src/documentmanager.cpp:966
+msgctxt "ghostwriter::DocumentManager|"
+msgid "Error creating backup location!"
+msgstr "Помилка створення місця для зберігання резервних копій!"
+
+#: src/editor/markdowndocument.cpp:92 src/editor/markdowndocument.cpp:168
+msgctxt "ghostwriter::MarkdownDocument|"
+msgid "untitled"
+msgstr "без назви"
+
+#: src/editor/markdowneditor.cpp:923
+msgctxt "ghostwriter::MarkdownEditor|"
+msgid "Save Image"
+msgstr "Зберегти зображення"
+
+#: src/editor/markdowneditor.cpp:1534
+msgctxt "ghostwriter::MarkdownEditor|"
+msgid "Insert Image"
+msgstr "Вставити зображення"
+
+#: src/editor/markdowneditor.cpp:2460
+#, qt-format
+msgctxt "ghostwriter::MarkdownEditor|"
+msgid "Images (%1)"
+msgstr "зображення (%1)"
+
+#: src/export/cmarkgfmexporter.cpp:50
+#, qt-format
+msgctxt "QObject|"
+msgid "%1 format is unsupported by the cmark-gfm processor."
+msgstr "Підтримки формату %1 не передбачено в обробнику cmark-gfm."
+
+#: src/export/cmarkgfmexporter.cpp:58
+msgctxt "QObject|"
+msgid "Export failed"
+msgstr "Не вдалося експортувати"
+
+#: src/export/commandlineexporter.cpp:147
+msgctxt "QObject|"
+msgid "Export failed: "
+msgstr "Не вдалося експортувати: "
+
+#: src/export/commandlineexporter.cpp:167
+#, qt-format
+msgctxt "QObject|"
+msgid "%1 format is not supported by this processor."
+msgstr "Підтримки формату %1 у цьому обробнику не передбачено."
+
+#: src/export/commandlineexporter.cpp:191
+msgctxt "QObject|"
+msgid "Failed to execute command: "
+msgstr "Не вдалося виконати команду: "
+
+#: src/export/exportdialog.cpp:46 src/export/exportdialog.cpp:105
+msgctxt "ghostwriter::ExportDialog|"
+msgid "Export"
+msgstr "Експортувати"
+
+#: src/export/exportdialog.cpp:85
+msgctxt "ghostwriter::ExportDialog|"
+msgid "Smart Typography"
+msgstr "Кмітлива типографія"
+
+#: src/export/exportdialog.cpp:89
+msgctxt "ghostwriter::ExportDialog|"
+msgid "Open on Export"
+msgstr "Відкрити експортоване"
+
+#: src/export/exportdialog.cpp:92
+msgctxt "ghostwriter::ExportDialog|"
+msgid "Export Options"
+msgstr "Параметри експорту"
+
+#: src/export/exportdialog.cpp:94
+msgctxt "ghostwriter::ExportDialog|"
+msgid "Markdown Converter"
+msgstr "Перетворювач Markdown"
+
+#: src/export/exportdialog.cpp:95
+msgctxt "ghostwriter::ExportDialog|"
+msgid "File Format"
+msgstr "Формат файла"
+
+#: src/export/exportdialog.cpp:113
+msgctxt "ghostwriter::ExportDialog|"
+msgid "Command line options:"
+msgstr "Параметри командного рядка:"
+
+#: src/export/exportdialog.cpp:184
+#, qt-format
+msgctxt "ghostwriter::ExportDialog|"
+msgid "exporting to %1"
+msgstr "експортування до %1"
+
+#: src/export/exportdialog.cpp:201
+msgctxt "ghostwriter::ExportDialog|"
+msgid "Export failed."
+msgstr "Помилка під час експортування."
+
+#: src/export/exporter.cpp:69
+msgctxt "QObject|"
+msgid "Export to HTML is not supported with this processor."
+msgstr "Підтримки експортування до HTML не передбачено у цьому обробнику."
+
+#: src/findreplace.cpp:97
+msgctxt "ghostwriter::FindReplace|"
+msgid "Match case"
+msgstr "З урахуванням регістру"
+
+#: src/findreplace.cpp:102
+msgctxt "ghostwriter::FindReplace|"
+msgid "Whole word"
+msgstr "Тільки цілі слова"
+
+#: src/findreplace.cpp:108
+msgctxt "ghostwriter::FindReplace|"
+msgid "Regular expression"
+msgstr "Формальний вираз"
+
+#: src/findreplace.cpp:113
+msgctxt "ghostwriter::FindReplace|"
+msgid "Highlight matches"
+msgstr "Позначити відповідники"
+
+#: src/findreplace.cpp:121
+msgctxt "ghostwriter::FindReplace|"
+msgid "Find previous"
+msgstr "Знайти попереднє"
+
+#: src/findreplace.cpp:126
+msgctxt "ghostwriter::FindReplace|"
+msgid "Find next"
+msgstr "Знайти далі"
+
+#: src/findreplace.cpp:131
+msgctxt "ghostwriter::FindReplace|"
+msgid "Replace"
+msgstr "Замінити"
+
+#: src/findreplace.cpp:135
+msgctxt "ghostwriter::FindReplace|"
+msgid "Replace All"
+msgstr "Замінити всі"
+
+#: src/findreplace.cpp:165
+msgctxt "ghostwriter::FindReplace|"
+msgid "Find:"
+msgstr "Знайти:"
+
+#: src/findreplace.cpp:171
+msgctxt "ghostwriter::FindReplace|"
+msgid "Replace with:"
+msgstr "Замінити на:"
+
+#: src/findreplace.cpp:371
+msgctxt "ghostwriter::FindReplace|"
+msgid "%Ln replacement(s)"
+msgid_plural "%Ln replacement(s)"
+msgstr[0] "%Ln заміна"
+msgstr[1] "%Ln заміни"
+msgstr[2] "%Ln замін"
+msgstr[3] "%Ln заміна"
+
+#: src/findreplace.cpp:421
+msgctxt "ghostwriter::FindReplace|"
+msgid "Search wrapped"
+msgstr "Циклічний пошук"
+
+#: src/findreplace.cpp:428
+msgctxt "ghostwriter::FindReplace|"
+msgid "No results"
+msgstr "Нічого не знайдено"
+
+#: src/findreplace.cpp:470
+#, qt-format
+msgctxt "ghostwriter::FindReplace|"
+msgid "%1 matches"
+msgstr "%1 відповідності"
+
+#: src/mainwindow.cpp:911
+msgctxt "ghostwriter::MainWindow|"
+msgid "&File"
+msgstr "&Файл"
+
+#: src/mainwindow.cpp:913
+msgctxt "ghostwriter::MainWindow|"
+msgid "&New"
+msgstr "С&творити"
+
+#: src/mainwindow.cpp:914
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Open"
+msgstr "&Відкрити"
+
+#: src/mainwindow.cpp:916
+msgctxt "ghostwriter::MainWindow|"
+msgid "Open &Recent..."
+msgstr "Відкрити &недавні…"
+
+#: src/mainwindow.cpp:917
+msgctxt "ghostwriter::MainWindow|"
+msgid "Reopen Closed File"
+msgstr "Повторно відкрити закритий файл"
+
+#: src/mainwindow.cpp:925
+msgctxt "ghostwriter::MainWindow|"
+msgid "Clear Menu"
+msgstr "Спорожнити меню"
+
+#: src/mainwindow.cpp:930
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Save"
+msgstr "&Зберегти"
+
+#: src/mainwindow.cpp:931
+msgctxt "ghostwriter::MainWindow|"
+msgid "Save &As..."
+msgstr "Зберегти &як…"
+
+#: src/mainwindow.cpp:932
+msgctxt "ghostwriter::MainWindow|"
+msgid "R&ename..."
+msgstr "Пере&йменувати…"
+
+#: src/mainwindow.cpp:933
+msgctxt "ghostwriter::MainWindow|"
+msgid "Re&load from Disk..."
+msgstr "П&ерезавантажити з диска…"
+
+#: src/mainwindow.cpp:935
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Export"
+msgstr "&Експортувати"
+
+#: src/mainwindow.cpp:937
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Quit"
+msgstr "Ви&йти"
+
+#: src/mainwindow.cpp:941
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Edit"
+msgstr "З&міни"
+
+#: src/mainwindow.cpp:942
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Undo"
+msgstr "&Вернути"
+
+#: src/mainwindow.cpp:943
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Redo"
+msgstr "&Повторити"
+
+#: src/mainwindow.cpp:945
+msgctxt "ghostwriter::MainWindow|"
+msgid "Cu&t"
+msgstr "Ви&різати"
+
+#: src/mainwindow.cpp:946
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Copy"
+msgstr "&Копіювати"
+
+#: src/mainwindow.cpp:947
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Paste"
+msgstr "Вс&тавити"
+
+#: src/mainwindow.cpp:948
+msgctxt "ghostwriter::MainWindow|"
+msgid "Copy &HTML"
+msgstr "Копі&ювати HTML"
+
+#: src/mainwindow.cpp:950
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Insert Image..."
+msgstr "Вст&авити зображення…"
+
+#: src/mainwindow.cpp:953
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Find"
+msgstr "&Знайти"
+
+#: src/mainwindow.cpp:954
+msgctxt "ghostwriter::MainWindow|"
+msgid "Rep&lace"
+msgstr "За&мінити"
+
+#: src/mainwindow.cpp:955
+msgctxt "ghostwriter::MainWindow|"
+msgid "Find &Next"
+msgstr "Знайти &далі"
+
+#: src/mainwindow.cpp:956
+msgctxt "ghostwriter::MainWindow|"
+msgid "Find &Previous"
+msgstr "Знайти поз&аду"
+
+#: src/mainwindow.cpp:958
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Spell check"
+msgstr "Перев&ірка правопису"
+
+#: src/mainwindow.cpp:960
+msgctxt "ghostwriter::MainWindow|"
+msgid "For&mat"
+msgstr "&Формат"
+
+#: src/mainwindow.cpp:961
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Bold"
+msgstr "&Жирний"
+
+#: src/mainwindow.cpp:962
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Italic"
+msgstr "&Курсив"
+
+#: src/mainwindow.cpp:963
+msgctxt "ghostwriter::MainWindow|"
+msgid "Stri&kethrough"
+msgstr "Перек&реслення"
+
+#: src/mainwindow.cpp:964
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Code Fences"
+msgstr "&Огортання коду"
+
+#: src/mainwindow.cpp:965
+msgctxt "ghostwriter::MainWindow|"
+msgid "&HTML Comment"
+msgstr "&Коментар HTML"
+
+#: src/mainwindow.cpp:968
+msgctxt "ghostwriter::MainWindow|"
+msgid "I&ndent"
+msgstr "&Відступ"
+
+#: src/mainwindow.cpp:969
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Unindent"
+msgstr "С&касувати відступ"
+
+#: src/mainwindow.cpp:971
+msgctxt "ghostwriter::MainWindow|"
+msgid "Block &Quote"
+msgstr "&Цитування"
+
+#: src/mainwindow.cpp:972
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Strip Block Quote"
+msgstr "В&илучити цитування"
+
+#: src/mainwindow.cpp:974
+msgctxt "ghostwriter::MainWindow|"
+msgid "&* Bullet List"
+msgstr "&* Список з пунктами"
+
+#: src/mainwindow.cpp:975
+msgctxt "ghostwriter::MainWindow|"
+msgid "&- Bullet List"
+msgstr "&- Список з пунктами"
+
+#: src/mainwindow.cpp:976
+msgctxt "ghostwriter::MainWindow|"
+msgid "&+ Bullet List"
+msgstr "&+ Список з пунктами"
+
+#: src/mainwindow.cpp:978
+msgctxt "ghostwriter::MainWindow|"
+msgid "1&. Numbered List"
+msgstr "1&. Нумерований список"
+
+#: src/mainwindow.cpp:979
+msgctxt "ghostwriter::MainWindow|"
+msgid "1&) Numbered List"
+msgstr "1&) Нумерований список"
+
+#: src/mainwindow.cpp:981
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Task List"
+msgstr "Список зав&дань"
+
+#: src/mainwindow.cpp:982
+msgctxt "ghostwriter::MainWindow|"
+msgid "Toggle Task(s) &Complete"
+msgstr "Увімкнути або вимкнути з&авершеність завдання"
+
+#: src/mainwindow.cpp:985
+msgctxt "ghostwriter::MainWindow|"
+msgid "&View"
+msgstr "П&ерегляд"
+
+#: src/mainwindow.cpp:987
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Full Screen"
+msgstr "&На весь екран"
+
+#: src/mainwindow.cpp:995
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Preview in HTML"
+msgstr "&Перегляд в HTML"
+
+#: src/mainwindow.cpp:1003
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Outline"
+msgstr "С&хема"
+
+#: src/mainwindow.cpp:1013
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Session Statistics"
+msgstr "Статистика се&ансу"
+
+#: src/mainwindow.cpp:1022
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Document Statistics"
+msgstr "Статистика док&умента"
+
+#: src/mainwindow.cpp:1031
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Cheat Sheet"
+msgstr "&Аркуш підказок"
+
+#: src/mainwindow.cpp:1042
+msgctxt "ghostwriter::MainWindow|"
+msgid "Increase Font Size"
+msgstr "Збільшити розмір шрифту"
+
+#: src/mainwindow.cpp:1043
+msgctxt "ghostwriter::MainWindow|"
+msgid "Decrease Font Size"
+msgstr "Зменшити розмір шрифту"
+
+#: src/mainwindow.cpp:1045
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Settings"
+msgstr "П&араметри"
+
+#: src/mainwindow.cpp:1046 src/mainwindow.cpp:1357
+msgctxt "ghostwriter::MainWindow|"
+msgid "Themes..."
+msgstr "Теми…"
+
+#: src/mainwindow.cpp:1047 src/mainwindow.cpp:1358
+msgctxt "ghostwriter::MainWindow|"
+msgid "Font..."
+msgstr "Шрифт…"
+
+#: src/mainwindow.cpp:1048 src/mainwindow.cpp:1359
+msgctxt "ghostwriter::MainWindow|"
+msgid "Application Language..."
+msgstr "Мова програми…"
+
+#: src/mainwindow.cpp:1049 src/mainwindow.cpp:1360
+msgctxt "ghostwriter::MainWindow|"
+msgid "Preview Options..."
+msgstr "Параметри попереднього перегляду…"
+
+#: src/mainwindow.cpp:1050 src/mainwindow.cpp:1361
+msgctxt "ghostwriter::MainWindow|"
+msgid "Preferences..."
+msgstr "Налаштування…"
+
+#: src/mainwindow.cpp:1056
+msgctxt "ghostwriter::MainWindow|"
+msgid "&Help"
+msgstr "&Довідка"
+
+#: src/mainwindow.cpp:1066
+msgctxt "ghostwriter::MainWindow|"
+msgid "Quick &Reference Guide"
+msgstr "&Короткий довідник"
+
+#: src/mainwindow.cpp:1067
+msgctxt "ghostwriter::MainWindow|"
+msgid "Wiki"
+msgstr "Вікі"
+
+#: src/mainwindow.cpp:1115
+msgctxt "ghostwriter::MainWindow|"
+msgid "Toggle sidebar"
+msgstr "Увімкнути/Вимкнути бічну панель"
+
+#: src/mainwindow.cpp:1172
+msgctxt "ghostwriter::MainWindow|"
+msgid "Toggle dark mode"
+msgstr "Увімкнути або вимкнути темний режим"
+
+#: src/mainwindow.cpp:1191
+msgctxt "ghostwriter::MainWindow|"
+msgid "Toggle Live HTML Preview"
+msgstr "Увімкнути або вимкнути інтерактивний режим HTML"
+
+#: src/mainwindow.cpp:1211
+msgctxt "ghostwriter::MainWindow|"
+msgid "Toggle Hemingway mode"
+msgstr "Увімкнути або вимкнути режим Гемінґвея"
+
+#: src/mainwindow.cpp:1219
+msgctxt "ghostwriter::MainWindow|"
+msgid "Toggle distraction free mode"
+msgstr "Увімкнути або вимкнути ненав'язливий режим"
+
+#: src/mainwindow.cpp:1228
+msgctxt "ghostwriter::MainWindow|"
+msgid "Toggle full screen mode"
+msgstr "Увімкнути або вимкнути повноекранний режим"
+
+#: src/mainwindow.cpp:1251
+msgctxt "ghostwriter::MainWindow|"
+msgid "Show Sidebar"
+msgstr "Показати бічну панель"
+
+#: src/mainwindow.cpp:1268
+msgctxt "ghostwriter::MainWindow|"
+msgid "# Heading 1"
+msgstr "# Заголовок 1"
+
+#: src/mainwindow.cpp:1269
+msgctxt "ghostwriter::MainWindow|"
+msgid "## Heading 2"
+msgstr "## Заголовок 2"
+
+#: src/mainwindow.cpp:1270
+msgctxt "ghostwriter::MainWindow|"
+msgid "### Heading 3"
+msgstr "### Заголовок 3"
+
+#: src/mainwindow.cpp:1271
+msgctxt "ghostwriter::MainWindow|"
+msgid "#### Heading 4"
+msgstr "#### Заголовок 4"
+
+#: src/mainwindow.cpp:1272
+msgctxt "ghostwriter::MainWindow|"
+msgid "##### Heading 5"
+msgstr "##### Заголовок 5"
+
+#: src/mainwindow.cpp:1273
+msgctxt "ghostwriter::MainWindow|"
+msgid "###### Heading 6"
+msgstr "###### Заголовок 6"
+
+#: src/mainwindow.cpp:1274
+msgctxt "ghostwriter::MainWindow|"
+msgid "*Emphasis* _Emphasis_"
+msgstr "*Виокремлення* _Виокремлення_"
+
+#: src/mainwindow.cpp:1275
+msgctxt "ghostwriter::MainWindow|"
+msgid "**Strong** __Strong__"
+msgstr "**Підсилення** __Підсилення__"
+
+#: src/mainwindow.cpp:1276
+msgctxt "ghostwriter::MainWindow|"
+msgid "1. Numbered List"
+msgstr "1. Нумерований список"
+
+#: src/mainwindow.cpp:1277
+msgctxt "ghostwriter::MainWindow|"
+msgid "* Bullet List"
+msgstr "* Список з пунктами"
+
+#: src/mainwindow.cpp:1278
+msgctxt "ghostwriter::MainWindow|"
+msgid "+ Bullet List"
+msgstr "+ Список з пунктами"
+
+#: src/mainwindow.cpp:1279
+msgctxt "ghostwriter::MainWindow|"
+msgid "- Bullet List"
+msgstr "- Список з пунктами"
+
+#: src/mainwindow.cpp:1280
+msgctxt "ghostwriter::MainWindow|"
+msgid "> Block Quote"
+msgstr "> Цитування"
+
+#: src/mainwindow.cpp:1281
+msgctxt "ghostwriter::MainWindow|"
+msgid "`Code Span`"
+msgstr "`Код`"
+
+#: src/mainwindow.cpp:1282
+msgctxt "ghostwriter::MainWindow|"
+msgid "``` Code Block"
+msgstr "``` Блок коду"
+
+#: src/mainwindow.cpp:1283
+msgctxt "ghostwriter::MainWindow|"
+msgid "[Link](http://url.com \"Title\")"
+msgstr "[Посилання](http://url.com \"Заголовок\")"
+
+#: src/mainwindow.cpp:1284
+msgctxt "ghostwriter::MainWindow|"
+msgid "[Reference Link][ID]"
+msgstr "[Посилання][Ідентифікатор]"
+
+#: src/mainwindow.cpp:1285
+msgctxt "ghostwriter::MainWindow|"
+msgid "[ID]: http://url.com \"Reference Definition\""
+msgstr "[Ідентифікатор]: http://url.com \"Визначення посилання\""
+
+#: src/mainwindow.cpp:1286
+msgctxt "ghostwriter::MainWindow|"
+msgid "![Image](./image.jpg \"Title\")"
+msgstr "![Зображення](./зображення.jpg \"Заголовок\")"
+
+#: src/mainwindow.cpp:1287
+msgctxt "ghostwriter::MainWindow|"
+msgid "--- *** ___ Horizontal Rule"
+msgstr "--- *** ___ Горизонтальна лінія"
+
+#: src/mainwindow.cpp:1337
+msgctxt "ghostwriter::MainWindow|"
+msgid "Outline"
+msgstr "Схема"
+
+#: src/mainwindow.cpp:1338
+msgctxt "ghostwriter::MainWindow|"
+msgid "Session Statistics"
+msgstr "Статистика сеансу"
+
+#: src/mainwindow.cpp:1339
+msgctxt "ghostwriter::MainWindow|"
+msgid "Document Statistics"
+msgstr "Статистика документа"
+
+#: src/mainwindow.cpp:1340
+msgctxt "ghostwriter::MainWindow|"
+msgid "Cheat Sheet"
+msgstr "Аркуш підказок"
+
+#: src/mainwindow.cpp:1350
+msgctxt "ghostwriter::MainWindow|"
+msgid "Settings"
+msgstr "Параметри"
+
+#: src/preview/htmlpreview.cpp:162
+msgctxt "ghostwriter::HtmlPreview|"
+msgid "Error loading resources/preview.html"
+msgstr "Помилка під час спроби завантажити resources/preview.html"
+
+#: src/settings/localedialog.cpp:36
+msgctxt "ghostwriter::LocaleDialog|"
+msgid "Set Application Language"
+msgstr "Встановлення мови програми"
+
+#: src/settings/localedialog.cpp:56
+msgctxt "ghostwriter::LocaleDialog|"
+msgid "No translations are available!"
+msgstr "Переклади недоступні!"
+
+#: src/settings/localedialog.cpp:57
+msgctxt "ghostwriter::LocaleDialog|"
+msgid "Please reinstall this application for more language options."
+msgstr ""
+"Будь ласка, перевстановіть цю програму для отримання доступу до додаткових "
+"пунктів мов."
+
+#: src/settings/localedialog.cpp:132
+msgctxt "ghostwriter::LocaleDialog|"
+msgid "Sorry!"
+msgstr "Вибачте!"
+
+#: src/settings/localedialog.cpp:133
+msgctxt "ghostwriter::LocaleDialog|"
+msgid "Could not load translation."
+msgstr "Не вдалося завантажити переклад."
+
+#: src/settings/localedialog.cpp:139
+msgctxt "ghostwriter::LocaleDialog|"
+msgid "Please restart the application for changes to take effect."
+msgstr "Будь ласка, перезапустіть програму для набуття чинності змінами."
+
+#: src/settings/preferencesdialog.cpp:73
+msgctxt "ghostwriter::PreferencesDialog|"
+msgid "Spell Check"
+msgstr "Перевірка правопису"
+
+#: src/settings/preferencesdialog.cpp:88
+msgctxt "ghostwriter::PreferencesDialog|"
+msgid "Matched Characters"
+msgstr "Відповідні символи"
+
+#: src/settings/preferencesdialog.cpp:177
+msgctxt "ghostwriter::PreferencesDialog|"
+msgid "Rounded"
+msgstr "Округлений"
+
+#: src/settings/preferencesdialog.cpp:178
+msgctxt "ghostwriter::PreferencesDialog|"
+msgid "Square"
+msgstr "Прямокутний"
+
+#: src/settings/preferencesdialog.cpp:203
+msgctxt "ghostwriter::PreferencesDialogPrivate|"
+msgid "Select Backup Directory"
+msgstr "Виберіть каталог резервних копій"
+
+#: src/settings/preferencesdialog.cpp:231
+msgctxt "ghostwriter::PreferencesDialog|"
+msgid "Sentence"
+msgstr "Речення"
+
+#: src/settings/preferencesdialog.cpp:232
+msgctxt "ghostwriter::PreferencesDialog|"
+msgid "Current Line"
+msgstr "Поточний рядок"
+
+#: src/settings/preferencesdialog.cpp:233
+msgctxt "ghostwriter::PreferencesDialog|"
+msgid "Three Lines"
+msgstr "Три лінії"
+
+#: src/settings/preferencesdialog.cpp:234
+msgctxt "ghostwriter::PreferencesDialog|"
+msgid "Paragraph"
+msgstr "Абзац"
+
+#: src/settings/preferencesdialog.cpp:235
+msgctxt "ghostwriter::PreferencesDialog|"
+msgid "Typewriter"
+msgstr "Друкарська машинка"
+
+#: src/settings/preferencesdialog.cpp:243
+msgctxt "ghostwriter::PreferencesDialog|"
+msgid "Narrow"
+msgstr "Вузький"
+
+#: src/settings/preferencesdialog.cpp:244
+msgctxt "ghostwriter::PreferencesDialog|"
+msgid "Medium"
+msgstr "Середній"
+
+#: src/settings/preferencesdialog.cpp:245
+msgctxt "ghostwriter::PreferencesDialog|"
+msgid "Wide"
+msgstr "Широкий"
+
+#: src/settings/preferencesdialog.cpp:246
+msgctxt "ghostwriter::PreferencesDialog|"
+msgid "Full"
+msgstr "Повний"
+
+#: src/settings/preferencesdialog.cpp:253
+msgctxt "ghostwriter::PreferencesDialog|"
+msgid "Plain"
+msgstr "Простий"
+
+#: src/settings/preferencesdialog.cpp:254
+#: src/settings/preferencesdialog.cpp:261
+msgctxt "ghostwriter::PreferencesDialog|"
+msgid "Italic"
+msgstr "Курсив"
+
+#: src/settings/preferencesdialog.cpp:262
+msgctxt "ghostwriter::PreferencesDialog|"
+msgid "Underline"
+msgstr "Підкреслення"
+
+#: src/settings/previewoptionsdialog.cpp:51
+msgctxt "ghostwriter::PreviewOptionsDialog|"
+msgid "Preview Options"
+msgstr "Параметри попереднього перегляду"
+
+#: src/settings/previewoptionsdialog.cpp:91
+msgctxt "ghostwriter::PreviewOptionsDialog|"
+msgid "Markdown Flavor"
+msgstr "Різновид Markdown"
+
+#: src/settings/previewoptionsdialog.cpp:99
+#: src/settings/previewoptionsdialog.cpp:125
+msgctxt "ghostwriter::PreviewOptionsDialog|"
+msgid "Choose..."
+msgstr "Вибрати…"
+
+#: src/settings/previewoptionsdialog.cpp:117
+msgctxt "ghostwriter::PreviewOptionsDialog|"
+msgid "Text Font:"
+msgstr "Шрифт тексту:"
+
+#: src/settings/previewoptionsdialog.cpp:143
+msgctxt "ghostwriter::PreviewOptionsDialog|"
+msgid "Code Font:"
+msgstr "Шрифт коду:"
+
+#: src/settings/previewoptionsdialog.cpp:151
+msgctxt "ghostwriter::PreviewOptionsDialog|"
+msgid "Command line options:"
+msgstr "Параметри командного рядка:"
+
+#: src/settings/previewoptionsdialog.cpp:177
+#, qt-format
+msgctxt "ghostwriter::PreviewOptionsDialog|"
+msgid "%1 %2pt"
+msgstr "%1 %2пт"
+
+#: src/settings/simplefontdialog.cpp:61
+msgctxt "ghostwriter::SimpleFontDialog|"
+msgid "Family"
+msgstr "Гарнітура"
+
+#: src/settings/simplefontdialog.cpp:108
+msgctxt "ghostwriter::SimpleFontDialog|"
+msgid "Size"
+msgstr "Розмір"
+
+#: src/settings/simplefontdialog.cpp:111
+msgctxt "ghostwriter::SimpleFontDialog|"
+msgid "AaBbCcXxYyZz"
+msgstr "АаБбВвЬьЮюЯя"
+
+#: src/settings/simplefontdialog.cpp:115
+msgctxt "ghostwriter::SimpleFontDialog|"
+msgid "Preview"
+msgstr "Перегляд"
+
+#: src/settings/simplefontdialog.cpp:118
+msgctxt "ghostwriter::SimpleFontDialog|"
+msgid "Show only monospaced fonts"
+msgstr "Показувати лише моноширинні шрифти"
+
+#: src/spelling/spellcheckdecorator.cpp:245
+msgctxt "ghostwriter::SpellCheckDecorator|"
+msgid "Check spelling..."
+msgstr "Перевірити правопис…"
+
+#: src/spelling/spellcheckdecorator.cpp:273
+msgctxt "ghostwriter::SpellCheckDecorator|"
+msgid "Spelling"
+msgstr "Перевірка правопису"
+
+#: src/spelling/spellcheckdecorator.cpp:298
+msgctxt "ghostwriter::SpellCheckDecorator|"
+msgid "Add word to dictionary"
+msgstr "Додати слово до словника"
+
+#: src/spelling/spellcheckdecorator.cpp:338
+msgctxt "ghostwriter::SpellCheckDecorator|"
+msgid "No spelling suggestions found"
+msgstr "Не знайдено пропозицій перевірки правопису"
+
+#: src/spelling/spellcheckdialog.cpp:53
+msgctxt "ghostwriter::SpellCheckDialog|"
+msgid "Spell Check"
+msgstr "Перевірка правопису"
+
+#: src/spelling/spellcheckdialog.cpp:152
+msgctxt "ghostwriter::SpellCheckDialog|"
+msgid "Spell check is complete!"
+msgstr "Перевірку правопису завершено."
+
+#: src/statistics/abstractstatisticswidget.cpp:17
+msgctxt "ghostwriter::AbstractStatisticsWidget|"
+msgid "&lt; 1m"
+msgstr "&lt; 1хв."
+
+#: src/statistics/abstractstatisticswidget.cpp:18
+msgctxt "ghostwriter::AbstractStatisticsWidget|"
+msgid "&lt; 1"
+msgstr "&lt; 1"
+
+#: src/statistics/abstractstatisticswidget.cpp:19
+msgctxt "ghostwriter::AbstractStatisticsWidget|"
+msgid "250 words per page"
+msgstr "250 слів на сторінку"
+
+#: src/statistics/abstractstatisticswidget.cpp:41
+msgctxt "ghostwriter::AbstractStatisticsWidget|"
+msgid "<b>%L1%</b>"
+msgstr "<b>%L1%</b>"
+
+#: src/statistics/abstractstatisticswidget.cpp:53
+#, qt-format
+msgctxt "ghostwriter::AbstractStatisticsWidget|"
+msgid "%1h %2m"
+msgstr "%1г. %2хв."
+
+#: src/statistics/abstractstatisticswidget.cpp:55
+#, qt-format
+msgctxt "ghostwriter::AbstractStatisticsWidget|"
+msgid "%1m"
+msgstr "%1 хв."
+
+#: src/statistics/documentstatisticswidget.cpp:19
+msgctxt "ghostwriter::DocumentStatisticsWidget|"
+msgid "Very Easy"
+msgstr "Дуже проста"
+
+#: src/statistics/documentstatisticswidget.cpp:20
+msgctxt "ghostwriter::DocumentStatisticsWidget|"
+msgid "Easy"
+msgstr "Проста"
+
+#: src/statistics/documentstatisticswidget.cpp:21
+msgctxt "ghostwriter::DocumentStatisticsWidget|"
+msgid "Standard"
+msgstr "Стандартна"
+
+#: src/statistics/documentstatisticswidget.cpp:22
+msgctxt "ghostwriter::DocumentStatisticsWidget|"
+msgid "Difficult"
+msgstr "Складна"
+
+#: src/statistics/documentstatisticswidget.cpp:23
+msgctxt "ghostwriter::DocumentStatisticsWidget|"
+msgid "Very Difficult"
+msgstr "Дуже складна"
+
+#: src/statistics/documentstatisticswidget.cpp:60
+msgctxt "ghostwriter::DocumentStatisticsWidget|"
+msgid "Words:"
+msgstr "Слова:"
+
+#: src/statistics/documentstatisticswidget.cpp:61
+msgctxt "ghostwriter::DocumentStatisticsWidget|"
+msgid "Characters:"
+msgstr "Персонажі:"
+
+#: src/statistics/documentstatisticswidget.cpp:62
+msgctxt "ghostwriter::DocumentStatisticsWidget|"
+msgid "Sentences:"
+msgstr "Речення:"
+
+#: src/statistics/documentstatisticswidget.cpp:63
+msgctxt "ghostwriter::DocumentStatisticsWidget|"
+msgid "Paragraphs:"
+msgstr "Абзаци:"
+
+#: src/statistics/documentstatisticswidget.cpp:64
+msgctxt "ghostwriter::DocumentStatisticsWidget|"
+msgid "Pages:"
+msgstr "Сторінки:"
+
+#: src/statistics/documentstatisticswidget.cpp:65
+msgctxt "ghostwriter::DocumentStatisticsWidget|"
+msgid "Complex Words:"
+msgstr "Складені слова:"
+
+#: src/statistics/documentstatisticswidget.cpp:65
+msgctxt "ghostwriter::DocumentStatisticsWidget|"
+msgid "0%"
+msgstr "0%"
+
+#: src/statistics/documentstatisticswidget.cpp:66
+msgctxt "ghostwriter::DocumentStatisticsWidget|"
+msgid "Reading Time:"
+msgstr "Час на читання:"
+
+#: src/statistics/documentstatisticswidget.cpp:67
+msgctxt "ghostwriter::DocumentStatisticsWidget|"
+msgid "Reading Ease:"
+msgstr "Простота читання:"
+
+#: src/statistics/documentstatisticswidget.cpp:67
+msgctxt "ghostwriter::DocumentStatisticsWidget|"
+msgid "LIX Reading Ease"
+msgstr "Простота читання LIX"
+
+#: src/statistics/documentstatisticswidget.cpp:68
+msgctxt "ghostwriter::DocumentStatisticsWidget|"
+msgid "Grade Level:"
+msgstr "Рівень оцінки:"
+
+#: src/statistics/documentstatisticswidget.cpp:68
+msgctxt "ghostwriter::DocumentStatisticsWidget|"
+msgid "Coleman-Liau Readability Index (CLI)"
+msgstr "Індекс зручності читання Коулмена-Ляу (CLI)"
+
+#: src/statistics/documentstatisticswidget.cpp:149
+msgctxt "ghostwriter::DocumentStatisticsWidget|"
+msgid "Kindergarten"
+msgstr "Дитсадок"
+
+#: src/statistics/documentstatisticswidget.cpp:152
+msgctxt "ghostwriter::DocumentStatisticsWidget|"
+msgid "Rocket Science"
+msgstr "Складна наука"
+
+#: src/statistics/documentstatisticswidget.cpp:154
+msgctxt "ghostwriter::DocumentStatisticsWidget|"
+msgid "College"
+msgstr "Коледж"
+
+#: src/statistics/sessionstatisticswidget.cpp:37
+msgctxt "ghostwriter::SessionStatisticsWidget|"
+msgid "Words Written:"
+msgstr "Написано слів:"
+
+#: src/statistics/sessionstatisticswidget.cpp:38
+msgctxt "ghostwriter::SessionStatisticsWidget|"
+msgid "Pages Written:"
+msgstr "Написано сторінок:"
+
+#: src/statistics/sessionstatisticswidget.cpp:39
+msgctxt "ghostwriter::SessionStatisticsWidget|"
+msgid "Average WPM:"
+msgstr "Середня швидкість у сл. за хв.:"
+
+#: src/statistics/sessionstatisticswidget.cpp:40
+msgctxt "ghostwriter::SessionStatisticsWidget|"
+msgid "Total Time:"
+msgstr "Загальний час:"
+
+#: src/statistics/sessionstatisticswidget.cpp:41
+msgctxt "ghostwriter::SessionStatisticsWidget|"
+msgid "Idle Time:"
+msgstr "Час бездіяльності:"
+
+#: src/statistics/sessionstatisticswidget.cpp:41
+msgctxt "ghostwriter::SessionStatisticsWidget|"
+msgid "100%"
+msgstr "100%"
+
+#: src/statistics/statisticsindicator.cpp:15
+msgctxt "ghostwriter::StatisticsIndicator|"
+msgid "%Ln word(s)"
+msgid_plural "%Ln word(s)"
+msgstr[0] "%Ln слово"
+msgstr[1] "%Ln слова"
+msgstr[2] "%Ln слів"
+msgstr[3] "%Ln слово"
+
+#: src/statistics/statisticsindicator.cpp:19
+msgctxt "ghostwriter::StatisticsIndicator|"
+msgid "%Ln character(s)"
+msgid_plural "%Ln character(s)"
+msgstr[0] "%Ln символ"
+msgstr[1] "%Ln символи"
+msgstr[2] "%Ln символів"
+msgstr[3] "%Ln символ"
+
+#: src/statistics/statisticsindicator.cpp:23
+msgctxt "ghostwriter::StatisticsIndicator|"
+msgid "%Ln sentence(s)"
+msgid_plural "%Ln sentence(s)"
+msgstr[0] "%Ln речення"
+msgstr[1] "%Ln речення"
+msgstr[2] "%Ln речень"
+msgstr[3] "%Ln речення"
+
+#: src/statistics/statisticsindicator.cpp:27
+msgctxt "ghostwriter::StatisticsIndicator|"
+msgid "%Ln paragraph(s)"
+msgid_plural "%Ln paragraph(s)"
+msgstr[0] "%Ln абзац"
+msgstr[1] "%Ln абзаци"
+msgstr[2] "%Ln абзаців"
+msgstr[3] "%Ln абзац"
+
+#: src/statistics/statisticsindicator.cpp:31
+msgctxt "ghostwriter::StatisticsIndicator|"
+msgid "%Ln page(s)"
+msgid_plural "%Ln page(s)"
+msgstr[0] "%Ln сторінка"
+msgstr[1] "%Ln сторінки"
+msgstr[2] "%Ln сторінок"
+msgstr[3] "%Ln сторінка"
+
+#: src/statistics/statisticsindicator.cpp:35
+msgctxt "ghostwriter::StatisticsIndicator|"
+msgid "%Ln word(s) added"
+msgid_plural "%Ln word(s) added"
+msgstr[0] "додано %Ln слово"
+msgstr[1] "додано %Ln слова"
+msgstr[2] "додано %Ln слів"
+msgstr[3] "додано %Ln слово"
+
+#: src/statistics/statisticsindicator.cpp:37
+#, qt-format
+msgctxt "ghostwriter::StatisticsIndicator|"
+msgid "%1 wpm"
+msgstr "%1 сл./хв."
+
+#: src/statistics/statisticsindicator.cpp:38
+#, qt-format
+msgctxt "ghostwriter::StatisticsIndicator|"
+msgid "%1:%2 read time"
+msgstr "Час читання %1:%2"
+
+#: src/statistics/statisticsindicator.cpp:41
+#, qt-format
+msgctxt "ghostwriter::StatisticsIndicator|"
+msgid "%1:%2 write time"
+msgstr "Час написання %1:%2"
+
+#: src/theme/themeeditordialog.cpp:81
+msgctxt "ghostwriter::ThemeEditorDialog|"
+msgid "Edit Theme"
+msgstr "Редагування теми"
+
+#: src/theme/themeeditordialog.cpp:84
+msgctxt "ghostwriter::ThemeEditorDialog|"
+msgid "Theme Name"
+msgstr "Назва теми"
+
+#: src/theme/themeeditordialog.cpp:168
+msgctxt "ghostwriter::ThemeEditorDialog|"
+msgid "Element"
+msgstr "Елемент"
+
+#: src/theme/themeeditordialog.cpp:169
+msgctxt "ghostwriter::ThemeEditorDialog|"
+msgid "Light Mode"
+msgstr "Світлий режим"
+
+#: src/theme/themeeditordialog.cpp:170
+msgctxt "ghostwriter::ThemeEditorDialog|"
+msgid "Dark Mode"
+msgstr "Темний режим"
+
+#: src/theme/themeeditordialog.cpp:172
+msgctxt "ghostwriter::ThemeEditorDialog|"
+msgid "Foreground"
+msgstr "Передній план"
+
+#: src/theme/themeeditordialog.cpp:173
+msgctxt "ghostwriter::ThemeEditorDialog|"
+msgid "Background"
+msgstr "Тло"
+
+#: src/theme/themeeditordialog.cpp:174
+msgctxt "ghostwriter::ThemeEditorDialog|"
+msgid "Selection"
+msgstr "Вибір"
+
+#: src/theme/themeeditordialog.cpp:175
+msgctxt "ghostwriter::ThemeEditorDialog|"
+msgid "Cursor"
+msgstr "Курсор"
+
+#: src/theme/themeeditordialog.cpp:176
+msgctxt "ghostwriter::ThemeEditorDialog|"
+msgid "Markup"
+msgstr "Розмітка"
+
+#: src/theme/themeeditordialog.cpp:177
+msgctxt "ghostwriter::ThemeEditorDialog|"
+msgid "Accent"
+msgstr "Акцент"
+
+#: src/theme/themeeditordialog.cpp:178
+msgctxt "ghostwriter::ThemeEditorDialog|"
+msgid "Heading"
+msgstr "Заголовок"
+
+#: src/theme/themeeditordialog.cpp:179
+msgctxt "ghostwriter::ThemeEditorDialog|"
+msgid "Emphasis"
+msgstr "Виокремлення"
+
+#: src/theme/themeeditordialog.cpp:180
+msgctxt "ghostwriter::ThemeEditorDialog|"
+msgid "Block Text"
+msgstr "Текст цитати"
+
+#: src/theme/themeeditordialog.cpp:181
+msgctxt "ghostwriter::ThemeEditorDialog|"
+msgid "Link"
+msgstr "Посилання"
+
+#: src/theme/themeeditordialog.cpp:182
+msgctxt "ghostwriter::ThemeEditorDialog|"
+msgid "Error"
+msgstr "Помилка"
+
+#: src/theme/themeeditordialog.cpp:215
+msgctxt "ghostwriter::ThemeEditorDialog|"
+msgid "Unable to save theme."
+msgstr "Не вдалося зберегти тему."
+
+#: src/theme/themerepository.cpp:138
+#, qt-format
+msgctxt "ghostwriter::ThemeRepository|"
+msgid "The specified theme does not exist in the file system: %1"
+msgstr "Вказаної теми немає у файловій системі: %1"
+
+#: src/theme/themerepository.cpp:146
+#, qt-format
+msgctxt "ghostwriter::ThemeRepository|"
+msgid "Could not open theme file for reading: %1"
+msgstr "Не вдалося відкрити файл теми для читання: %1"
+
+#: src/theme/themerepository.cpp:156
+#, qt-format
+msgctxt "ghostwriter::ThemeRepository|"
+msgid "Invalid theme format: %1"
+msgstr "Некоректний формат теми: %1"
+
+#: src/theme/themerepository.cpp:175 src/theme/themerepository.cpp:184
+#, qt-format
+msgctxt "ghostwriter::ThemeRepository|"
+msgid "Invalid or missing value(s) in %1"
+msgstr "Некоректні значення або значення, яких не вказано, у %1"
+
+#: src/theme/themerepository.cpp:192
+msgctxt "ghostwriter::ThemeRepository|"
+msgid ""
+"The specified theme is not available.  Try restarting the application.  If "
+"problem persists, please file a bug report."
+msgstr ""
+"Вказана тема є недоступною. Спробуйте перезапустити програму. Якщо проблему "
+"не буде вирішено, будь ласка, створіть звіт про ваду."
+
+#: src/theme/themerepository.cpp:208
+#, qt-format
+msgctxt "ghostwriter::ThemeRepository|"
+msgid ""
+"Could not delete theme at %1. Please try setting the file permissions to be "
+"writeable."
+msgstr ""
+"Не вдалося вилучити тему у %1. Будь ласка, спробуйте встановити права "
+"доступу до запису до файла."
+
+#: src/theme/themerepository.cpp:228
+#, qt-format
+msgctxt "ghostwriter::ThemeRepository|"
+msgid "'%1' already exists.  Please choose another name."
+msgstr "«%1» вже існує. Будь ласка, виберіть іншу назву."
+
+#: src/theme/themerepository.cpp:237
+#, qt-format
+msgctxt "ghostwriter::ThemeRepository|"
+msgid "'%1' theme already exists.  Please choose another name."
+msgstr "Тема «%1» вже існує. Будь ласка, виберіть іншу назву."
+
+#: src/theme/themerepository.cpp:244
+msgctxt "ghostwriter::ThemeRepository|"
+msgid "Failed to rename theme.  Please check file permissions."
+msgstr ""
+"Не вдалося перейменувати тему. Будь ласка, перевірте права доступу до файла."
+
+#: src/theme/themerepository.cpp:282
+msgctxt "ghostwriter::ThemeRepository|"
+msgid ""
+"Theme could not be saved to disk.  Please check file permissions or try "
+"renaming the theme."
+msgstr ""
+"Не вдалося зберегти на диск тему. Будь ласка, перевірте права доступу до "
+"файла або спробуйте перейменувати тему."
+
+#: src/theme/themerepository.cpp:312
+msgctxt "ghostwriter::ThemeRepository|"
+msgid "Untitled 1"
+msgstr "Без назви 1"
+
+#: src/theme/themerepository.cpp:322
+#, qt-format
+msgctxt "ghostwriter::ThemeRepository|"
+msgid "Untitled %1"
+msgstr "Без назви %1"
+
+#: src/theme/themeselectiondialog.cpp:96
+msgctxt "ghostwriter::ThemeSelectionDialog|"
+msgid "Themes"
+msgstr "Теми"
+
+#: src/theme/themeselectiondialog.cpp:145
+msgctxt "ghostwriter::ThemeSelectionDialog|"
+msgid "Edit..."
+msgstr "Змінити…"
+
+#: src/theme/themeselectiondialog.cpp:382
+msgctxt "ghostwriter::ThemeSelectionDialog|"
+msgid "Cannot delete theme."
+msgstr "Не вдалося вилучити тему."
+
+#: src/theme/themeselectiondialog.cpp:383
+msgctxt "ghostwriter::ThemeSelectionDialog|"
+msgid "Sorry, this is a built-in theme that cannot be deleted."
+msgstr "Вибачте, це вбудована тема, яку не може бути вилучено."
+
+#: src/theme/themeselectiondialog.cpp:393
+#, qt-format
+msgctxt "ghostwriter::ThemeSelectionDialog|"
+msgid "Are you sure you want to permanently delete the '%1' theme?"
+msgstr "Ви справді хочете остаточно вилучити тему «%1»?"
+
+#: src/theme/themeselectiondialog.cpp:408
+msgctxt "ghostwriter::ThemeSelectionDialog|"
+msgid "Failed to delete theme."
+msgstr "Не вдалося вилучити тему."
+
+#: src/theme/themeselectiondialog.cpp:435
+msgctxt "ghostwriter::ThemeSelectionDialog|"
+msgid "Cannot edit theme."
+msgstr "Не вдалося виконати редагування теми."
+
+#: src/theme/themeselectiondialog.cpp:436
+msgctxt "ghostwriter::ThemeSelectionDialog|"
+msgid "Sorry, this is a built-in theme that cannot be edited."
+msgstr "Вибачте, це вбудована тема, яку не може бути редаговано."
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Preferences"
+#~ msgstr "Налаштування"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "General"
+#~ msgstr "Загальне"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Editor"
+#~ msgstr "Редактор"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Display"
+#~ msgstr "Показ"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Show current time in full screen mode"
+#~ msgstr "Показувати поточний час у повноекранному режимі"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Hide menu bar in full screen mode"
+#~ msgstr "Приховувати смужку меню у повноекранному режимі"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Interface style"
+#~ msgstr "Стиль інтерфейсу"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "File Saving"
+#~ msgstr "Збереження файлів"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Auto save"
+#~ msgstr "Автозбереження"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Backup file on save"
+#~ msgstr "Створювати резервні копії файлів при збереженні"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "View untitled drafts..."
+#~ msgstr "Переглянути чернетки без назв…"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Session"
+#~ msgstr "Сеанс"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Remember recent files"
+#~ msgstr "Запам'ятовувати нещодавні файли"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Open last file on startup"
+#~ msgstr "Відкривати попередній файл під час запуску"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Tabulation"
+#~ msgstr "Табуляція"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Insert spaces for tabs"
+#~ msgstr "Вставляти пробіли для табуляцій"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Tabulation width"
+#~ msgstr "Ширина табуляції"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Styling"
+#~ msgstr "Стилізація"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Focus mode"
+#~ msgstr "Режим фокусування"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Editor width"
+#~ msgstr "Ширина редактора"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Blockquote style"
+#~ msgstr "Стиль цитування"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Emphasis style"
+#~ msgstr "Стиль виокремлення"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Use large headings"
+#~ msgstr "Великі заголовки"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Typing"
+#~ msgstr "Набирання"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Cycle bullet point markers"
+#~ msgstr "Циклічний перехід позначками у списку"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Automatically match characters"
+#~ msgstr "Автоматична відповідність символів"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Customize matched characters..."
+#~ msgstr "Налаштувати відповідні символи…"
+
+#, fuzzy
+#~| msgctxt "ghostwriter::MainWindow|"
+#~| msgid "Images"
+#~ msgctxt "ghostwriter::MarkdownEditor|"
+#~ msgid "Images"
+#~ msgstr "зображення"
+
+#~ msgctxt "ghostwriter::MainWindow|"
+#~ msgid "All Files"
+#~ msgstr "усі файли"
+
+#~ msgctxt "ghostwriter::LocaleDialog|"
+#~ msgid "The translations folder is missing."
+#~ msgstr "Не знайдено теки перекладів."
+
+#~ msgctxt "ghostwriter::MainWindow|"
+#~ msgid ""
+#~ "<p>Copyright &copy; 2014-2022 wereturtle</b><p>You may use and "
+#~ "redistribute this software under the terms of the <a href=\"http://www."
+#~ "gnu.org/licenses/gpl.html\">GNU General Public License Version 3</a>.</"
+#~ "p><p>Visit the official website at <a href=\"http://github.com/wereturtle/"
+#~ "ghostwriter\">http://github.com/wereturtle/ghostwriter</a>.</p><p>Special "
+#~ "thanks and credit for reused code goes to</p><p><a href=\"mailto:"
+#~ "graeme@gottcode.org\">Graeme Gott</a>, author of <a href=\"http://"
+#~ "gottcode.org/focuswriter/\">FocusWriter</a><br/>Dmitry Shachnev, author "
+#~ "of <a href=\"http://sourceforge.net/p/retext/home/ReText/\">Retext</a><br/"
+#~ "><a href=\"mailto:gabriel@teuton.org\">Gabriel M. Beddingfield</a>, "
+#~ "author of <a href=\"http://www.teuton.org/~gabriel/stretchplayer/"
+#~ "\">StretchPlayer</a><br/><p>I am also deeply indebted to <a href=\"mailto:"
+#~ "w.vollprecht@gmail.com\">Wolf Vollprecht</a>, the author of <a href="
+#~ "\"http://uberwriter.wolfvollprecht.de/\">UberWriter</a>, for the "
+#~ "inspiration he provided in creating such a beautiful Markdown editing "
+#~ "tool.</p>"
+#~ msgstr ""
+#~ "<p>&copy; wereturtle, 2014–2022</b><p>Ви можете користуватися і "
+#~ "поширювати це програмне забезпечення за умов дотримання <a href=\"http://"
+#~ "www.gnu.org/licenses/gpl.html\">Загальної громадської ліцензії GNU версії "
+#~ "3</a>.</p><p>Відвідайте офіційний сайт за адресою <a href=\"http://github."
+#~ "com/wereturtle/ghostwriter\">http://github.com/wereturtle/ghostwriter</a>."
+#~ "</p><p>Особлива подяка за використаний код</p><p><a href=\"mailto:"
+#~ "graeme@gottcode.org\">Graeme Gott</a>, автору <a href=\"http://gottcode."
+#~ "org/focuswriter/\">FocusWriter</a><br/>Дмітрію Шачньову, автору <a href="
+#~ "\"http://sourceforge.net/p/retext/home/ReText/\">Retext</a><br/><a href="
+#~ "\"mailto:gabriel@teuton.org\">Gabriel M. Beddingfield</a>, автору <a href="
+#~ "\"http://www.teuton.org/~gabriel/stretchplayer/\">StretchPlayer</a><br/"
+#~ "><p>Також глибоко вдячний <a href=\"mailto:w.vollprecht@gmail.com\">Wolf "
+#~ "Vollprecht</a>, автору <a href=\"http://uberwriter.wolfvollprecht.de/"
+#~ "\">UberWriter</a> за натхнення на створення такого прекрасного засобу "
+#~ "редагування Markdown.</p>"
+
+#~ msgctxt "ghostwriter::MainWindow|"
+#~ msgid "About %1"
+#~ msgstr "Про %1"
+
+#~ msgctxt "ghostwriter::MainWindow|"
+#~ msgid "&About"
+#~ msgstr "Пр&о програму"
+
+#~ msgctxt "ghostwriter::MainWindow|"
+#~ msgid "About &Qt"
+#~ msgstr "П&ро Qt"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Live spellcheck enabled"
+#~ msgstr "Інтерактивну перевірку правопису увімкнено"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Language"
+#~ msgstr "Мова"
+
+#~ msgctxt "ghostwriter::PreferencesDialog|"
+#~ msgid "Dictionary"
+#~ msgstr "Словник"
+
+#~ msgctxt "ghostwriter::SpellChecker|"
+#~ msgid "Check Spelling"
+#~ msgstr "Перевірка правопису"
+
+#~ msgctxt "ghostwriter::SpellChecker|"
+#~ msgid "&Add"
+#~ msgstr "&Додати"
+
+#~ msgctxt "ghostwriter::SpellChecker|"
+#~ msgid "&Ignore"
+#~ msgstr "&Ігнорувати"
+
+#~ msgctxt "ghostwriter::SpellChecker|"
+#~ msgid "I&gnore All"
+#~ msgstr "І&гнорувати всі"
+
+#~ msgctxt "ghostwriter::SpellChecker|"
+#~ msgid "&Change"
+#~ msgstr "З&мінити"
+
+#~ msgctxt "ghostwriter::SpellChecker|"
+#~ msgid "C&hange All"
+#~ msgstr "Змі&нити усі"
+
+#~ msgctxt "ghostwriter::SpellChecker|"
+#~ msgid "Not in dictionary:"
+#~ msgstr "Немає у словнику:"
+
+#~ msgctxt "ghostwriter::SpellChecker|"
+#~ msgid "Change to:"
+#~ msgstr "Змінити:"
+
+#~ msgctxt "ghostwriter::SpellChecker|"
+#~ msgid "Checking spelling..."
+#~ msgstr "Перевірка правопису…"
+
+#~ msgctxt "ghostwriter::SpellChecker|"
+#~ msgid "Cancel"
+#~ msgstr "Скасувати"
+
+#~ msgctxt "ghostwriter::SpellChecker|"
+#~ msgid "Please wait"
+#~ msgstr "Будь ласка, зачекайте"
+
+#~ msgctxt "ghostwriter::SpellChecker|"
+#~ msgid "Continue checking at beginning of file?"
+#~ msgstr "Продовжити перевірку від початку файла?"

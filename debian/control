@@ -1,0 +1,45 @@
+Source: mdwriter
+Section: editors
+Priority: optional
+Maintainer: mhsihar <mhsihar@users.noreply.github.com>
+Build-Depends: debhelper-compat (= 13),
+               cmake,
+               pkg-config,
+               gettext,
+               extra-cmake-modules,
+               qtbase5-dev,
+               qtbase5-dev-tools,
+               qt5-qmake,
+               qttools5-dev,
+               qttools5-dev-tools,
+               libqt5svg5-dev,
+               libqt5webchannel5-dev,
+               qtwebengine5-dev,
+               libkf5sonnet-dev,
+               libkf5coreaddons-dev,
+               libkf5xmlgui-dev,
+               libkf5configwidgets-dev,
+               libkf5widgetsaddons-dev,
+               libhunspell-dev
+Standards-Version: 4.6.2
+Homepage: https://github.com/mhsihar/mdwriter
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/mhsihar/mdwriter.git
+Vcs-Browser: https://github.com/mhsihar/mdwriter
+
+Package: mdwriter
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         libqt5svg5
+Description: distraction-free Markdown editor (ghostwriter fork)
+ mdwriter is a personal fork of ghostwriter, a distraction-free Markdown
+ editor with a live HTML preview, theme creation, focus and full-screen
+ modes, live word count, and document navigation.
+ .
+ This fork adds a preview-first layout (rendered preview by default, source
+ editor toggled with Ctrl+Shift+E), import of Visual Studio Code color themes
+ (built-in and extension themes), and VS Code-matching default fonts.
+ .
+ It installs as its own application and can be installed alongside the
+ stock ghostwriter package.

@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+# SPDX-FileCopyrightText: 2026 mhsihar
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF

@@ -1,0 +1,36 @@
+mdwriter (23.08.5+mdwriter2) unstable; urgency=medium
+
+  * Feature: amber unsaved-changes dot on the tab bar (VS Code / Geany style) —
+    appears when the document is modified, clears on save, and the tab's close
+    button is hidden while the document is dirty.
+  * Fix: the "modified" state was never set (MarkdownEditor::onContentsChanged()
+    never called setModified()), so the unsaved-changes dot and the window
+    title's [*] never appeared.
+  * Fix: auto-save suppressed documentModifiedChanged, hiding the dot whenever
+    auto-save was enabled (the default).
+  * Fix: a fresh, untouched document was wrongly flagged as modified at startup
+    (spurious no-op contentsChange on an empty document).
+  * Fix: Save / Save As / Rename / Reload / Export were silently broken (the
+    SLOT type code leaked into invokeMethod's method name).
+  * Fix: O(n^2) -> O(n) large-file load via a per-AST line index
+    (findBlockAtLine); ~6.6x faster on a 70k-line document.
+  * Fix: stack-overflow crash (SIGSEGV) when showing line numbers in a large
+    Markdown file.
+  * Fix: VS Code font-zoom shortcuts (Ctrl+= / Ctrl+- / Ctrl+0) now work.
+  * Fix: file-explorer icon gutter alignment (uniform 16px icons/indent).
+
+ -- mhsihar <mhsihar@users.noreply.github.com>  Thu, 15 Oct 2026 13:15:00 +0800
+
+mdwriter (23.08.5+mdwriter1) unstable; urgency=medium
+
+  * Initial fork of ghostwriter 23.08.5 (Qt5/KF5), rebranded as mdwriter so it
+    can be installed alongside the stock ghostwriter package.
+  * Feature: preview-first layout — rendered preview by default, source editor
+    toggled with Ctrl+Shift+E.
+  * Feature: import Visual Studio Code color themes (built-in and installed
+    extension themes) via Settings > Themes > "Import from VS Code...".
+  * Feature: VS Code-matching default fonts (Liberation Mono for code,
+    Ubuntu for preview text).
+  * Fix: firstAvailableFont() silently skipped installed fonts.
+
+ -- mhsihar <mhsihar@users.noreply.github.com>  Wed, 07 Oct 2026 16:30:00 +0800

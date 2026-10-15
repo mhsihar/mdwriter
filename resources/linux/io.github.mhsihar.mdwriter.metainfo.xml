@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: 2026 mhsihar
+SPDX-License-Identifier: CC0-1.0
+-->
+<component type="desktop-application">
+  <id>io.github.mhsihar.mdwriter</id>
+
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+
+  <name>mdwriter</name>
+  <summary>Distraction-free Markdown editor (ghostwriter fork)</summary>
+
+  <description>
+    <p>
+      mdwriter is a personal fork of ghostwriter, a distraction-free Markdown
+      editor with a live HTML preview, theme creation, focus and full-screen
+      modes, live word count, and document navigation. It ships the cmark-gfm
+      Markdown processor and can integrate with Pandoc, MultiMarkdown, Discount
+      and cmark processors if installed.
+    </p>
+    <p>
+      This fork adds VS Code theme import, VS Code-matching fonts, a
+      preview-first layout, and is packaged as its own application so it can be
+      installed alongside upstream ghostwriter.
+    </p>
+  </description>
+
+  <launchable type="desktop-id">io.github.mhsihar.mdwriter.desktop</launchable>
+
+  <url type="homepage">https://github.com/mhsihar/mdwriter</url>
+  <url type="bugtracker">https://github.com/mhsihar/mdwriter/issues</url>
+
+  <developer_name>mhsihar</developer_name>
+
+  <provides>
+    <binary>mdwriter</binary>
+  </provides>
+
+  <content_rating type="oars-1.1"/>
+
+  <releases>
+    <release version="23.08.5" date="2024-02-15"/>
+  </releases>
+</component>

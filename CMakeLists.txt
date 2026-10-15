@@ -1,0 +1,135 @@
+# SPDX-FileCopyrightText: 2022-2023 Megan Conkle <megan.conkle@kdemail.net>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+cmake_minimum_required(VERSION 3.16)
+if (POLICY CMP0063)
+    cmake_policy(SET CMP0063 NEW)
+endif()
+
+# KDE Application Version, managed by release script
+set(RELEASE_SERVICE_VERSION_MAJOR "23")
+set(RELEASE_SERVICE_VERSION_MINOR "08")
+set(RELEASE_SERVICE_VERSION_MICRO "5")
+set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_VERSION_MINOR}.${RELEASE_SERVICE_VERSION_MICRO}")
+
+project(mdwriter VERSION ${RELEASE_SERVICE_VERSION} LANGUAGES CXX)
+
+set(QT_MIN_VERSION "5.15.2")
+set(KF_MIN_VERSION "5.90")
+
+find_package(ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
+
+# Append to the module path so modules can be overridden from the command line.
+list(APPEND CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
+
+set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
+include(KDEInstallDirs)
+include(KDECompilerSettings NO_POLICY_SCOPE)
+remove_definitions(-DQT_NO_KEYWORDS)
+remove_definitions(-DQT_NO_CAST_TO_ASCII)
+remove_definitions(-DQT_NO_CAST_FROM_ASCII)
+include(KDECMakeSettings)
+include(ECMInstallIcons)
+include(ECMAddAppIcon)
+include(ECMPoQmTools)
+include(KDEClangFormat)
+include(KDEGitCommitHooks)
+include(FeatureSummary)
+
+if (QT_MAJOR_VERSION STREQUAL "6")
+    set(QT_MIN_VERSION "6.4.0")
+    set(KF_MIN_VERSION "5.240.0")
+    set(KF_MAJOR_VERSION "6")
+else()
+    set(KF_MAJOR_VERSION "5")
+endif()
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
+
+if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/poqm")
+    ecm_install_po_files_as_qm(poqm)
+endif()
+
+find_package(KF${KF_MAJOR_VERSION}DocTools ${KF_MIN_VERSION})
+set_package_properties(KF${KF_MAJOR_VERSION}DocTools PROPERTIES DESCRIPTION
+    "Tools to generate documentation"
+    TYPE OPTIONAL
+)
+
+set(QTAWESOME_USE_FREE ON)
+add_subdirectory(3rdparty/QtAwesome)
+set(CMARK_TESTS OFF)
+add_subdirectory(3rdparty/cmark-gfm EXCLUDE_FROM_ALL)
+add_subdirectory(src)
+
+if(KF${QT_MAJOR_VERSION}DocTools_FOUND)
+    kdoctools_install(po)
+    add_subdirectory(doc)
+endif()
+
+# Add icon files to the application's source files to have CMake bundle them in the executable.
+set(ICONS_FOLDER ${CMAKE_CURRENT_SOURCE_DIR}/resources/icons)
+
+set(ICON_FILES
+    ${ICONS_FOLDER}/sc-apps-mdwriter.svg
+    ${ICONS_FOLDER}/16-apps-mdwriter.png
+    ${ICONS_FOLDER}/22-apps-mdwriter.png
+    ${ICONS_FOLDER}/32-apps-mdwriter.png
+    ${ICONS_FOLDER}/64-apps-mdwriter.png
+    ${ICONS_FOLDER}/128-apps-mdwriter.png
+    ${ICONS_FOLDER}/256-apps-mdwriter.png
+)
+
+ecm_add_app_icon(ICONS_SOURCES ICONS ${ICON_FILES})
+target_sources(mdwriter PRIVATE ${ICONS_SOURCES})
+
+# See https://cmake.org/cmake/help/v3.15/prop_tgt/MACOSX_BUNDLE_INFO_PLIST.html
+if(APPLE)
+    string(TIMESTAMP CURRENT_YEAR "%Y")
+
+    set_property(
+        TARGET mdwriter
+        PROPERTY MACOSX_BUNDLE_INFO_PLIST ${CMAKE_CURRENT_SOURCE_DIR}/resources/mac/MacOSBundleInfo.plist.in
+    )
+
+    # These are substituted by CMake into MacOSBundleInfo.plist.in.
+    set(MACOSX_BUNDLE_DISPLAY_NAME "mdwriter")
+    set(MACOSX_BUNDLE_GUI_IDENTIFIER "io.github.mhsihar.mdwriter")
+    set(MACOSX_BUNDLE_BUNDLE_NAME "mdwriter")
+    set(MACOSX_BUNDLE_DISPLAY_NAME "mdwriter")
+    set(MACOSX_BUNDLE_INFO_STRING "mdwriter - A Markdown Editor")
+    set(MACOSX_BUNDLE_LONG_VERSION_STRING "mdwriter ${RELEASE_SERVICE_VERSION}")
+    set(MACOSX_BUNDLE_SHORT_VERSION_STRING "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_VERSION_MINOR}")
+    set(MACOSX_BUNDLE_BUNDLE_VERSION "${RELEASE_SERVICE_VERSION}")
+    set(MACOSX_BUNDLE_COPYRIGHT "2014-${CURRENT_YEAR} the mdwriter authors")
+endif()
+
+install(TARGETS mdwriter ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+
+ecm_install_icons(
+    ICONS ${ICON_FILES}
+    DESTINATION ${KDE_INSTALL_ICONDIR}
+    THEME hicolor
+)
+
+install(
+    PROGRAMS ${CMAKE_CURRENT_SOURCE_DIR}/resources/linux/io.github.mhsihar.mdwriter.desktop
+    DESTINATION ${KDE_INSTALL_APPDIR}
+)
+
+install(
+    FILES ${CMAKE_CURRENT_SOURCE_DIR}/resources/linux/io.github.mhsihar.mdwriter.metainfo.xml
+    DESTINATION ${KDE_INSTALL_METAINFODIR}
+)
+
+feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
+
+file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES src/**/*.cpp src/**/*.h)
+kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
+kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
